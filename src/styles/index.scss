@@ -11,3 +11,30 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background-image: url("https://i.pinimg.com/originals/41/f6/36/41f6360a7f814c10c60c321e41c745a4.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+};
+
+.audioBox {
+left: 50%;
+top: 50%;
+
+};
+
+li {
+
+    font-weight: bold;
+    color: white;
+    list-style: none;
+    -webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+border-width: 2px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+

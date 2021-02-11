@@ -68,7 +68,7 @@ export class Home extends React.Component {
 				<li
 					key={index}
 					onClick={() => this.play(this.state.currentIndex)}>
-					<span>{index + 1}</span>
+					<span>{index + 1 + " "}</span>
 					<span>{song.name}</span>
 				</li>
 			);
@@ -91,7 +91,8 @@ export class Home extends React.Component {
 						onClick={() => this.pause(this.state.currentIndex)}>
 						<i className="fa fa-pause" aria-hidden="true" />
 					</button>
-					<button onClick={() => this.play(this.state.current + 1)}>
+					<button
+						onClick={() => this.play(this.state.currentIndex + 1)}>
 						<i className="fa fa-caret-right" aria-hidden="true" />
 					</button>
 				</div>
@@ -101,8 +102,10 @@ export class Home extends React.Component {
 
 		return (
 			<>
-				{audioPlayer}
-				{liList}
+				<div className="audioBox ml-3">
+					<div className="audiorow col-2">{audioPlayer}</div>
+					<div className="playlist col-2">{liList}</div>
+				</div>
 			</>
 		);
 	}
